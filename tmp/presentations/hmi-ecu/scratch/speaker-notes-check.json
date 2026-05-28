@@ -1,0 +1,10 @@
+[
+  {
+    "slide": 1,
+    "notes": "This slide should be presented as the software depth story behind the HMI, not just the visual outcome.\n\nEmphasize that the architecture was built to reduce diagnostic time during integration: a fast overview for system status, deeper pages for subsystem detail, and pack-level battery visibility directly inside the dashboard.\n\nAlso point out that the modular Python structure kept the development loop affordable and practical because parsing, UI work, and deployment could advance independently before every hardware interface was finalized."
+  },
+  {
+    "slide": 2,
+    "notes": "Present this slide as the reason the HMI can move from development bench to vehicle without a major tooling jump.\n\nStress that Raspberry Pi 4 and the 7-inch capacitive touch screen were selected because they support interactive diagnostics cleanly while avoiding the cost and inflexibility of more specialized display hardware.\n\nThe important message is not just that the hardware works, but that it keeps both the development process and future maintenance practical."
+  }
+]

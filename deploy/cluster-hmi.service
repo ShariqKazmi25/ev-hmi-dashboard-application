@@ -1,0 +1,17 @@
+[Unit]
+Description=Car Cluster HMI
+After=graphical.target
+Wants=graphical.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/car-cluster-hmi
+ExecStart=/home/pi/car-cluster-hmi/deploy/start-cluster.sh
+Restart=always
+RestartSec=2
+Environment=DISPLAY=:0
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=graphical.target
